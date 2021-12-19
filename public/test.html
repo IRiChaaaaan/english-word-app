@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>英単アプリ</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+  </head>
+  <body>
+    <h1 class="box1">英単テスト</h1>
+    <div id="timer" style="display: none">
+      <progress id="prog" min="0" max="1000" value="1000"></progress><br>
+    </div>
+    <div id="sceneTop">
+        <a href="javascript:void(0);" class="btn1" onclick="OnClick();">START</a>
+    </div>
+    <div id="sceneGame" style="display: none">
+      <audio id="audioElement1" src="assets/sound/correct.mp3"></audio>
+      <audio id="audioElement2" src="assets/sound/wrong.mp3"></audio>
+      <div id = "question_num"></div>
+      <h2 class="box2" id="output"></h2>
+      <button type="button" class="btn2" id="select1" onclick="Judge(0);"></button><br>
+      <button type="button" class="btn2" id="select2" onclick="Judge(1);"></button><br>
+      <button type="button" class="btn2" id="select3" onclick="Judge(2);"></button><br>
+      <button type="button" class="btn2" id="select4" onclick="Judge(3);"></button><br>
+    </div>
+    <div id="sceneOver" style="display: none">
+      <h2 class="box2" id="correct-num"></h2>
+      <h2 class="box2" id="answer"></h2>
+      <a href="javascript:void(0);" class="btn1" onclick="OnClick();">もう一回</a>
+      <a href="/" class="btn1">おわる</a>
+    </div>
+    <script src="assets/js/test.js"></script>
+  </body>
+</html>

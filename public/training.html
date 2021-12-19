@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>英単アプリ</title>
+    <link rel="stylesheet" href="assets/css/training.css">
+  </head>
+  <body>
+    <h1 class="box1">英単アプリ</h1>
+    <div id="sceneTop">
+        <a href="javascript:void(0);" class="btn1" onclick="OnClick();">START</a>
+    </div>
+    <div id="sceneGame" style="display: none">
+      <audio id="audioElement" src="assets/sound/correct.mp3"></audio>
+      <div id = "question_num"></div>
+      <h2 class="box2" id="output"></h2>
+      <button type="button" class="btn2" id="select1" onclick="Judge(0);"></button><br>
+      <button type="button" class="btn2" id="select2" onclick="Judge(1);"></button><br>
+      <button type="button" class="btn2" id="select3" onclick="Judge(2);"></button><br>
+      <button type="button" class="btn2" id="select4" onclick="Judge(3);"></button><br>
+    </div>
+    <script src="assets/js/training.js"></script>
+  </body>
+</html>

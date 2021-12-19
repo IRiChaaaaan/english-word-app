@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+progress {
+  -webkit-appearance: none;
+  width: 98%;
+}
+::-webkit-progress-bar {
+  background-color: gray;
+}
+::-webkit-progress-value {
+  background-color: aqua;
+}
+
+.box1{
+	padding: 20px;
+	text-align:  center;
+	margin: 10px;
+	color: #5d627b;
+	background: white;
+	border-top: solid 5px #5d627b;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box2{
+	padding: 0.5em 1em;
+	text-align:  center;
+	margin: 24px 10px;
+	color: #474747;
+	background: whitesmoke;/*背景色*/
+	border-left: double 7px #4ec4d3;/*左線*/
+	border-right: double 7px #4ec4d3;/*右線*/
+}
+.box2 p {
+	margin: 0;
+	padding: 0;
+}
+
+#timer{
+  text-align:  center;
+}
+
+#sceneGame {
+	text-align: center;
+}
+
+#sceneOver {
+  text-align: center;
+}
+
+.btn1{
+	display: block;
+  text-decoration: none;
+	padding:1em 1em;
+	margin:64px auto;
+  height:35px;
+  width: 120px;
+  line-height: 37px;
+  text-align: center;
+  color: #fff;
+  background: #2bb6c1;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn1:hover{
+	background: #fff;
+  color: #2bb6c1;
+  border:solid 1px #2bb6c1;
+}
+
+.btn2{
+	font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+
+	border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+
+	margin: 10px auto;
+}
+
+.btn2:hover{
+	color: #fff;
+  background: #000;
+}
